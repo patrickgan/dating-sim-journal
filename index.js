@@ -21,7 +21,7 @@ const entriesMap = {
 }
 
 function displayEntries(id) {
-    const element = document.querySelector("#entries");
+    const element = document.querySelector(".entries");
     // TODO: implement fetch const entriesJson = fetch(`./entries/${id}.json`)
     const entries = entriesMap[id];
     for (const entry of entries) {
@@ -36,3 +36,16 @@ function fetchJSONData() {
         })
 }
 
+function onClickName(e) {
+    const selected = document.querySelector(".selected");
+    selected.classList.remove("selected");
+    this.classList.add("selected");
+}
+
+function addEventListeners() {
+    const elements = document.querySelectorAll(".names > li");
+    for (const element of elements) {
+        element.addEventListener("click", onClickName);
+    }
+    console.log("Done.");
+}

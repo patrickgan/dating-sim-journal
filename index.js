@@ -67,7 +67,6 @@ function onClickName(e) {
     const selected = document.querySelector(".selected");
     selected.classList.remove("selected");
     this.classList.add("selected");
-    // TODO: implement displayEntries
     displayEntries(this.id);
 }
 
@@ -76,5 +75,7 @@ function onLoad() {
     for (const element of elements) {
         element.addEventListener("click", onClickName);
     }
+    const selected = document.querySelector(".selected");
+    displayEntries(selected.id);
     console.log("Done.");
 }

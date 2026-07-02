@@ -1,0 +1,1 @@
+Favicon sourced from Flaticon: https://www.flaticon.com/free-icon/diary_1365840

@@ -33,7 +33,7 @@ body {
 }
 
 .entries {
-    flex: 2;
+    flex-grow: 1;
     padding: 4px;
 }
 

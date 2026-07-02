@@ -25,6 +25,7 @@ body {
 .names {
     flex-basis: 30%;
     border-right: 4px solid;
+    padding-top: 4px;
     margin: 0;
 }
 
@@ -32,12 +33,12 @@ body {
     font-size: xx-large;
     margin-block-start: 12px;
     border: solid 2px transparent;
-    padding-left: 10px;
+    padding: 16px 1vw 16px 1.5vw;
 }
 
 .entries {
     flex-grow: 1;
-    padding: 4px;
+    padding: 4px 1vw 4px 1vw;
 }
 
 .selected {
@@ -45,7 +46,6 @@ body {
     border-bottom: solid 2px !important;
     background-color: pink;
     color: black;
-    padding-left: 10px
 }
 
 h2 {
@@ -54,17 +54,18 @@ h2 {
 
 .hbox {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
 }
 
 .play-button {
     border: solid;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
     background-color: pink;
+}
+
+.entry-body {
+    margin: 4px 0 16px 0;
 }
 
 ul {

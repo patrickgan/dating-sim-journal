@@ -70,6 +70,18 @@ h2 {
     padding: 0 0 0 0;
 }
 
+.entry-header {
+    display: flex;
+}
+
+.entry-title {
+    flex: 3;
+}
+
+.entry-characters {
+    flex: 2;
+}
+
 .play-button {
     border: solid;
     padding: 10px 20px;
@@ -79,6 +91,14 @@ h2 {
 
 .play-button:hover {
     background-color: pink;
+}
+
+.entry-character {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 1px;
 }
 
 .entry-body {

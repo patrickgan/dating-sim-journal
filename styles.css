@@ -5,6 +5,10 @@ body {
     margin: 0;
 }
 
+h2 {
+    margin: 0;
+}
+
 .title {
     text-align: center;
     font-size: 40px;
@@ -36,20 +40,23 @@ body {
     padding: 16px 1vw 16px 1.5vw;
 }
 
+.names > li:hover {
+    background-color: rgb(252, 214, 220);
+}
+
+.names > .selected {
+    border-top: solid 2px !important;
+    border-bottom: solid 2px !important;
+    background-color: lightpink;
+}
+
 .entries {
     flex-grow: 1;
     padding: 4px 1vw 4px 1vw;
 }
 
-.selected {
-    border-top: solid 2px !important;
-    border-bottom: solid 2px !important;
-    background-color: pink;
-    color: black;
-}
-
-h2 {
-    margin: 0;
+.entries > li:hover {
+    background-color: gainsboro;
 }
 
 .hbox {
@@ -58,9 +65,19 @@ h2 {
     justify-content: space-between;
 }
 
+.entry {
+    flex: 1;
+    padding: 0 0 0 0;
+}
+
 .play-button {
     border: solid;
     padding: 10px 20px;
+    margin: 4px;
+    background-color: lightpink;
+}
+
+.play-button:hover {
     background-color: pink;
 }
 
